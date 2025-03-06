@@ -16,20 +16,17 @@
             margin: 0 auto;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-
-        .countdown-header {
+.countdown-header {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 10px;
         }
-
-        .countdown-subheader {
+ .countdown-subheader {
             font-size: 16px;
             margin-bottom: 20px;
             opacity: 0.9;
         }
-
-        .countdown-timer {
+ .countdown-timer {
             display: flex;
             justify-content: center;
             gap: 15px;
@@ -38,26 +35,22 @@
             align-items: center;
             flex-wrap: nowrap;
         }
-
-        .countdown-box {
+ .countdown-box {
             background-color: rgba(255, 255, 255, 0.2);
             border-radius: 5px;
             padding: 10px;
             min-width: 70px;
             display: inline-block;
         }
-
-        .countdown-value {
+ .countdown-value {
             font-size: 30px;
             font-weight: bold;
         }
-
-        .countdown-label {
+    .countdown-label {
             font-size: 12px;
             text-transform: uppercase;
         }
-
-        .countdown-cta {
+   .countdown-cta {
             background-color: #ff6b6b;
             color: white;
             border: none;
@@ -68,33 +61,27 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-
-        .countdown-cta:hover {
+  .countdown-cta:hover {
             background-color: #ff5252;
         }
-
-        .countdown-expired {
+  .countdown-expired {
             font-size: 22px;
             font-weight: bold;
             display: none;
         }
-
-        @media (max-width: 480px) {
+  @media (max-width: 480px) {
             .countdown-timer {
                 flex-wrap: nowrap;
                 gap: 5px;
             }
-            
-            .countdown-box {
+               .countdown-box {
                 min-width: 50px;
                 padding: 5px;
             }
-            
-            .countdown-value {
+             .countdown-value {
                 font-size: 18px;
             }
-            
-            .countdown-label {
+              .countdown-label {
                 font-size: 10px;
             }
         }
@@ -125,14 +112,12 @@
                 <div class="countdown-label">S</div>
             </div>
         </div>
+          <div class="countdown-expired" id="expired">L'offre est terminée !</div>
         
-        <div class="countdown-expired" id="expired">L'offre est terminée !</div>
-        
-        <button class="countdown-cta" id="cta-button">Profiter de l'offre maintenant</button>
+  <button class="countdown-cta" id="cta-button">Profiter de l'offre maintenant</button>
     </div>
-
-    <script>
-        // Date de fin du compte à rebours (format: année, mois (0-11), jour, heure, minute, seconde)
+ <script>
+       // Date de fin du compte à rebours (format: année, mois (0-11), jour, heure, minute, seconde)
         // Par défaut: 1 mois à partir d'aujourd'hui
         const currentDate = new Date();
         const targetDate = new Date();
